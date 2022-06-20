@@ -1,0 +1,8 @@
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\bin\Debug\gaxpy.exe.config
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\bin\Debug\gaxpy.exe
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\bin\Debug\gaxpy.pdb
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\obj\Debug\gaxpy.csproj.AssemblyReference.cache
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\obj\Debug\gaxpy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\obj\Debug\gaxpy.csproj.CoreCompileInputs.cache
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\obj\Debug\gaxpy.exe
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\1. gaxpy\gaxpy\obj\Debug\gaxpy.pdb
