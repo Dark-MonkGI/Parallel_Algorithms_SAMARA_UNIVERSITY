@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+
 
 namespace gaxpy
 {
@@ -13,51 +11,61 @@ namespace gaxpy
             //Формула gaxpy z = A*x + y 
             //Заем размерность матрицы
             Random rnd = new Random();
-            int n = rnd.Next(3, 7);
-            int m = rnd.Next(3, 7);
+            int n = 5;
+            int m = 5;
+            string text = "";
 
             Console.WriteLine($"Mатрица размерностью: n={n} и m={m} \n");
             //Созаем матрицу с заданной размерностью 
-            int[,] matrix = new int[n, m];
+            double[,] matrix = new double[n, m];
+
 
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
                 {
-                    matrix[i, j] = rnd.Next(0, 10);
+                    matrix[i, j] = rnd.NextDouble();
                     Console.Write("{0} ", matrix[i, j]);
-
+                    text = text + matrix[i, j] + "\n";
                 }
                 Console.WriteLine();
+                //text = text + "\n";
             }
+            write("matrix", text.Replace(",", "."));
             Console.WriteLine("---------");
 
 
             // Вектор
+            text = "";
             Console.WriteLine($"Вектор x: \n");
-            int[] vector = new int[m];
+            double[] vector = new double[m];
             for (int i = 0; i < m; i++)
             {
-                vector[i] = rnd.Next(0, 10);
+                vector[i] = rnd.NextDouble();
                 Console.WriteLine(vector[i]);
+                text = text + vector[i] + "\n";
             }
-
+            write("vector", text.Replace(",", "."));
             Console.WriteLine("---------");
 
 
             // второй вектор
+            text = "";
             Console.WriteLine($"Вектор y: \n");
-
-            int[] vectorNext = new int[n];
+            double[] vectorNext = new double[n];
             for (int i = 0; i < n; i++)
             {
-                vectorNext[i] = rnd.Next(0, 10);
+                vectorNext[i] = rnd.NextDouble();
                 Console.WriteLine(vectorNext[i]);
+                text = text = text + vectorNext[i] + "\n";
             }
-            Console.WriteLine("---------");  
+            write("vectorNext", text.Replace(",", "."));
+            Console.WriteLine("---------");
+
+
 
             //Выходная матрица (уже вектор)
-            int[] outputMatrixV = new int[n];
+            double[] outputMatrixV = new double[n];
 
             for (int i = 0; i < n; i++)
             {
@@ -67,9 +75,9 @@ namespace gaxpy
                 }
             }
 
-
             //итоговый вектор
-            int[] output = new int[n];
+            text = "";
+            double[] output = new double[n];
 
             for (int i = 0; i < n; i++)
             {
@@ -83,10 +91,21 @@ namespace gaxpy
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine($"{output[i]}");
+                text = text + output[i] + "\n";
             }
-
+            write("output", text.Replace(",", "."));
 
             Console.ReadKey();
+        }
+
+        private static void write(string nameFile, string text)
+        {
+            string path = $@"C:\Users\Dark_Monk\Desktop\gaxpy\{nameFile}.txt";
+            // полная перезапись файла 
+            using (StreamWriter writer = new StreamWriter(path, false))
+            {
+                writer.WriteLine(text);
+            }
         }
     }
 }
