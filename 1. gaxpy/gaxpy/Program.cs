@@ -31,7 +31,7 @@ namespace gaxpy
                 Console.WriteLine();
                 //text = text + "\n";
             }
-            write("matrix", text.Replace(",", "."));
+                
             Console.WriteLine("---------");
 
 
@@ -57,7 +57,7 @@ namespace gaxpy
             {
                 vectorNext[i] = rnd.NextDouble();
                 Console.WriteLine(vectorNext[i]);
-                text = text = text + vectorNext[i] + "\n";
+                text = text + vectorNext[i] + "\n";
             }
             write("vectorNext", text.Replace(",", "."));
             Console.WriteLine("---------");

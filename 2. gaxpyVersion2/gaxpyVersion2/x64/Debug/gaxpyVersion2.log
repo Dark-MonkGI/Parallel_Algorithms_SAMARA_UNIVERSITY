@@ -1,2 +1,3 @@
 ﻿  gaxpyVersion2.cpp
+C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\2. gaxpyVersion2\gaxpyVersion2\gaxpyVersion2.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   gaxpyVersion2.vcxproj -> C:\Users\Dark_Monk\Documents\GitHub\Parallel_Algorithms_SAMARA_UNIVERSITY\2. gaxpyVersion2\x64\Debug\gaxpyVersion2.exe
