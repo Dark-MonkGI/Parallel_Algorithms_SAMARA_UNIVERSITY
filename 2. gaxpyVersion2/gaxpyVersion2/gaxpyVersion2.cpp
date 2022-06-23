@@ -13,15 +13,14 @@ int main()
 
     //Формула gaxpy z = A*x + y 
     //Заем размерность матрицы
-    const int n = 5;
-    const int m = 5;
+    const int n = 250;
+    const int m = 250;
     string text = "";
 
     cout << "Matrix shape: n=" << n << " and m=" << m << "\n";
     cout << "---------\n";
     //Созаем матрицу с заданной размерностью 
-    float matrix[n][m];
-
+    float matrix[n][m]{};
     
     for (int i = 0; i < n; i++) 
     {
@@ -87,12 +86,7 @@ int main()
 
 
     //Умножение матрицы на вектор
-    float outputMatrixV[n];
-    for (int i = 0; i < n; i++)
-    {
-        outputMatrixV[i] = 0;
-    }
-
+    float outputMatrixV[n]{};
 
     for (int i = 0; i < n; i++)
     {
